@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 # Rofi sway window switcher mode v1.0
 
 tmp_dir="${TMPDIR:-/tmp}"
