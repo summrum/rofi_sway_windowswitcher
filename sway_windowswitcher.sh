@@ -90,7 +90,7 @@ case ${ROFI_RETV:-0} in
 	    	;;
 	    esac
 	;;
-	*)
+	3)
 		case "$@" in
 		   	"[ALL SCRATCHPAD WINDOWS]")
 		   		kill_scratched
