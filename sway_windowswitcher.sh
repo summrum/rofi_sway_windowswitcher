@@ -1,5 +1,5 @@
 #!/bin/sh
-# Rofi sway window switcher mode v1.0
+# Rofi sway window switcher mode v1.1
 
 tmp_dir="${TMPDIR:-/tmp}"
 
@@ -9,7 +9,7 @@ get_windows() {
 	while IFS="$(printf '\t')" read -r winid urgent active wsid app_id data; do
 		# Icon display hacks
 		case "$app_id" in
-			org.*)
+			dev.*|org.*)
 				icon="$app_id"
 			;;
 			signal)
