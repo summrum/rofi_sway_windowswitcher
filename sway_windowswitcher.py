@@ -68,7 +68,7 @@ def _get_windows() -> None:
         window_list.append(output_line)
     if window_list:
         print('\n'.join(window_list))
-    if scratch_count >= 2: # no need to allow presenting/closing all if n < 2
+    if scratch_count >= 2: # No need to allow presenting/closing all if n < 2
         print("[ALL SCRATCHPAD WINDOWS]")
 
 def _window_exists(tree, win_id: int) -> bool:
