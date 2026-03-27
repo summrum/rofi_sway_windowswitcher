@@ -4,6 +4,7 @@ A Rofi window switcher mode for sway that shows icons, parent workspace, applica
 ## Requirements:
 **Python3**  
 **i3ipc-python** - An improved Python library to control i3wm and sway  
+**Rofi** - A window switcher, application launcher and dmenu replacement  
 **Sway/SwayFX** - i3-compatible Wayland compositor  
 ## Usage:
 Ensure script is executable, then use one of the following options to add to your Rofi modi:  
