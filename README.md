@@ -1,6 +1,7 @@
 # rofi_sway_windowswitcher
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)  
 A Rofi window switcher mode for sway that shows icons, parent workspace, application name and urgent or focused status. Allows for selecting any window to focus, including any or all scratchpad windows. Also allows for closing windows from within the Rofi window.
+![example of cliphist mode](https://github.com/summrum/rofi_sway_windowswitcher/blob/main/rofi_switcher_example.png?raw=true)  
 ## Requirements:
 **Python3**  
 **i3ipc-python** - An improved Python library to control i3wm and sway  
