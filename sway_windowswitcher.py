@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Rofi sway window switcher mode (python version) v1.2.
+Rofi sway window switcher mode (python version) v1.3.
 Allows selecting windows to focus and/or close from within Rofi.
 Requires i3ipc-python library.
 """
@@ -91,7 +91,7 @@ def _kill_scratched() -> None:
     scratch_ids = [con.id for con in tree.scratchpad()]
     for win_id in scratch_ids:
         i3.command(f"[con_id={win_id}] kill")
-    _wait_for_windows_to_disappear(scratch_ids)
+    _wait_for_windows_to_disappear([int(win_id) for win_id in scratch_ids])
 
 def main():
     """Get window list, handle scratchpad, present or close windows"""
@@ -115,7 +115,7 @@ def main():
         else:
             if rofi_info:
                 i3.command(f"[con_id={rofi_info}] kill")
-                _wait_for_windows_to_disappear(rofi_info)
+                _wait_for_windows_to_disappear([int(rofi_info)])
                 _get_windows()
         sys.exit(0)
 
